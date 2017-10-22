@@ -76,6 +76,10 @@
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 
+% \newcommand{\addurl}{\href{https://{#1}}{{#1}}}
+\newcommand{\addurl}[1]{\href{https://#1}{#1}}
+
+
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{#1}\hspace{0.5em}#2\hspace{2em}}}
 
 \newcommand{\name}[1]{\def\@name{#1}}
@@ -92,18 +96,26 @@
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
+\newcommand{\socialinfo}[1]{\def\@socialinfo{#1}}
 
 \newcommand{\makecvheader}{%
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
+    % {\Huge\bfseries\MakeUppercase{\@name}\par}
+    {\Huge\bfseries{\@name}\par}
     \medskip
     {\large\bfseries\color{accent}\@tagline\par}
     \medskip
+    % {\marginpar{{\footnotesize\bfseries\@personalinfo\par}}
     {\footnotesize\bfseries\@personalinfo\par}
+    % {\footnotesize\bfseries\@socialinfo\par}
     \ifdef{\@photodiameter}{%
-    \end{minipage}\hfill%
+    \end{minipage}
+    % \begin{minipage}{3cm}
+    %   {\footnotesize\bfseries\@socialinfo\par}
+    % \end{minipage}
+    \hfill%
     \begin{minipage}{\@photodiameter}
     \if@normalphoto
       \includegraphics[width=\linewidth]{\@photo}
