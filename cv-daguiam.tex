@@ -50,11 +50,11 @@
 
 % Change the colours if you want to
 \definecolor{Mulberry}{HTML}{72243D}
-\definecolor{AccentBlue}{HTML}{2A7AE2}
-\definecolor{HeadingBlue}{HTML}{2A7AE2}
+\definecolor{AccentBlue}{HTML}{005b96}
+\definecolor{HeadingBlue}{HTML}{011f4b}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{Sepia}
+\colorlet{heading}{HeadingBlue}
 \colorlet{accent}{AccentBlue}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
@@ -71,7 +71,7 @@
 
 \begin{document}
 \name{Diogo Aguiam}
-\tagline{RF Signal Engineer,    Junior Researcher}
+\tagline{RF Signal Engineer}
 \photo{2.8cm}{images/daguiam2016.jpg}
 \personalinfo{%
   % Not all of these are required!
@@ -84,10 +84,10 @@
 
 }
 \socialinfo{
-  \homepage{https://daguiam.github.io} \par
-  \twitter{@diogoaguiam} \par
   \linkedin{linkedin.com/in/diogoaguiam} \par
+  \homepage{https://daguiam.github.io} \par
   \github{github.com/daguiam} \par
+  \twitter{@diogoaguiam} \par
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -103,26 +103,22 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cvevent{Invited Researcher, PhD Student}{Max-Planck-Institut für Plasmaphysik}{November 2015 -- Ongoing}{Munich, Germany}
+\cvevent{Microwave diagnostics developer - Invited Researcher}{Max-Planck-Institut für Plasmaphysik}{November 2015 -- Ongoing}{Munich, Germany}
 \begin{itemize}
-\item Installation and commissioning of microwave reflectometry diagnostics hardware
-\item Development of density profile reconstruction codes on distributed computing cluster
+\item Installation and commissioning of microwave reflectometry diagnostics for Nuclear Fusion research
+\item Development of density profile reconstruction codes for distributed computing cluster
 \end{itemize}
-
 
 \divider
 
-\cvevent{Junior Researcher Fellow, PhD Student}{Instituto de Plasmas e Fusão Nuclear}{February 2013 -- Ongoing}{Lisbon, Portugal}
+\cvevent{Junior Researcher, PhD Student}{Instituto de Plasmas e Fusão Nuclear}{February 2013 -- Ongoing}{Lisbon, Portugal}
 \begin{itemize}
-% \item Development and assembly of plasma diagnostics reflectometry systems for nuclear fusion reactors
-\item Assembly of microwave reflectometry systems
+\item Assembly of RF electronics systems
 \item 
-% \item Work consists in VHDL development and handling microwave electronics
 \end{itemize}
-
 \divider
 
-\cvevent{Junior Research Fellow}{Department of Physics, Instituto Superior Técnico}{February 2012 - July 2012}{Oeiras, Portugal}
+\cvevent{LabVIEW Developer}{Department of Physics, Instituto Superior Técnico}{February 2012 - July 2012}{Oeiras, Portugal}
 \begin{itemize}
 \item Development of LabVIEW interfaces for physics laboratories
 \end{itemize}
@@ -131,44 +127,49 @@
 
 \cvevent{Ciência Viva Monitor}{INESC-ID Lisboa}{June 2011}{Oeiras, Portugal}
 \begin{itemize}
-\item Teach electronics and PCB fabrication to high school students
+\item Teaching electronics and PCB fabrication to high school students
 \end{itemize}
-
-
-
 \divider
 
 
 
-\cvsection{Projects}
 
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
-\end{itemize}
+% \cvsection{Projects}
 
-\divider
+% \cvevent{Project 1}{Funding agency/institution}{}{}
+% \begin{itemize}
+% \item Details
+% \end{itemize}
+% \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+% \cvevent{Project 2}{Funding agency/institution}{Project duration}{}
+% A short abstract would also work.
 
-\medskip
+% \medskip
 
-\cvsection{A Day of My Life}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep}, 
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
-}
+
+
+
+
+
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+%   6/8em/accent!30/{Sleep,\\beautiful sleep}, 
+%   3/8em/accent!40/Hopeful novelist by night,
+%   8/8em/accent!60/Daytime job,
+%   2/10em/accent/Sports and relaxation,
+%   5/6em/accent!20/Spending time with family
+% }
 
 \clearpage
-\cvsection[page2sidebar]{Publications}
+% \cvsection[page2sidebar]{Publications}
+\cvsection{Publications}
 
 \nocite{*}
 

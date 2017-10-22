@@ -108,8 +108,12 @@
     {\large\bfseries\color{accent}\@tagline\par}
     \medskip
     % {\marginpar{{\footnotesize\bfseries\@personalinfo\par}}
+    \begin{minipage}[t]{6cm}
     {\footnotesize\bfseries\@personalinfo\par}
-    % {\footnotesize\bfseries\@socialinfo\par}
+    \end{minipage}
+    \begin{minipage}[t]{6cm}
+    {\footnotesize\bfseries\@socialinfo\par}
+    \end{minipage}
     \ifdef{\@photodiameter}{%
     \end{minipage}
     % \begin{minipage}{3cm}
