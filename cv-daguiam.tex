@@ -103,7 +103,7 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cvevent{Microwave diagnostics developer - Invited Researcher}{Max-Planck-Institut für Plasmaphysik}{November 2015 -- Ongoing}{Munich, Germany}
+\cvevent{Microwave diagnostics developer - Invited Researcher}{Max-Planck-Institut für Plasmaphysik}{November 2015 -- Ongoing}{Garching, Germany}
 \begin{itemize}
 \item Installation and commissioning of microwave reflectometry diagnostics for Nuclear Fusion research
 \item Development of density profile reconstruction codes for distributed computing cluster
@@ -113,8 +113,8 @@
 
 \cvevent{Junior Researcher, PhD Student}{Instituto de Plasmas e Fusão Nuclear}{February 2013 -- Ongoing}{Lisbon, Portugal}
 \begin{itemize}
-\item Assembly of RF electronics systems
-\item 
+\item Design and assembly of RF electronics systems
+\item Testing and validation of new microwave diagnostics
 \end{itemize}
 \divider
 
@@ -149,7 +149,21 @@
 
 
 
+\cvsection{Training}
 
+
+\cvevent{Radiation Safety Instruction}{Max-Planck-Institut für Plasmaphysik}{2015, 2016, 2017}{Garching, Germany}
+\begin{itemize}
+\item Working in a nuclear fusion research facility including in-vessel access
+\end{itemize}
+\divider
+
+
+\cvevent{Nanotechnologies - Athens Programme}{École Nationale Supérieure de Techniques Avancées}{November 2011}{Paris, France}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+% \divider
 
 
 
@@ -169,19 +183,26 @@
 
 \clearpage
 % \cvsection[page2sidebar]{Publications}
+\newgeometry{margin=1.2cm}
 \cvsection{Publications}
 
 \nocite{*}
 
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% \bibliographystyle{plain}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book,sorting=ydnt]
+
 
 \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
-
+% \begingroup
+% \newrefcontext[sorting=ydnt]  
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article,sorting=ydnt]
+% \endgroup 
 \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings,sorting=ydnt]
 
 %% If the NEXT page doesn't start with a \cvsection but you'd
 %% still like to add a sidebar, then use this command on THIS
