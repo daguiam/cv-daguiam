@@ -71,26 +71,32 @@
 
 %% sample.bib contains your publications
 % \addbibresource{sample.bib}
-\addbibresource{publications.bib}
+%\addbibresource{publications.bib}
+%\addbibresource{publications_20210131.bib}
+\addbibresource{publications_20210131_2.bib}
+
 
 \begin{document}
 \name{Diogo Aguiam}
-\tagline{Electronics Engineer, PhD}
+%\tagline{Electronics Engineer, PhD}
+\tagline{Electronics Engineer, Researcher, PhD}
 % \photo{2.8cm}{images/daguiam2016.jpg}
-\photo{2.8cm}{images/daguiam2018.jpg}
+%\photo{2.8cm}{images/daguiam2018.jpg}
+\photo{2.8cm}{images/daguiam2019.jpg}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{diogo.aguiam@tecnico.ulisboa.pt}\par
+%  \email{diogo.aguiam@tecnico.ulisboa.pt}\par
+  \email{diogo.aguiam@inl.int}\par
   \phone{+351 916126735}\par
   % \medskip
   % \mailaddress{Address, Street, 00000 County}
-  \location{Lisbon, Portugal} \par
+  \location{Braga, Portugal} \par
 
 }
 \socialinfo{
   \linkedin{linkedin.com/in/diogoaguiam} \par
-  \homepage{daguiam.github.io} \par
+  \homepage{diogo.aguiam.xyz} \par
   \github{github.com/daguiam} \par
   \twitter{@diogoaguiam} \par
   % \orcid{kasfkha}
@@ -109,9 +115,12 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cvevent{Staff Researcher}{International Iberian Nanotechnology Laboratory}{Since July 2018}{Braga, Portugal}
+\cvevent{Staff Researcher - Integrated Micro and Nanotechnologies}{International Iberian Nanotechnology Laboratory}{Since July 2018}{Braga, Portugal}
 \begin{itemize}
+% \item Microfabrication and Exploratory Nanotechnology
+\item Scientific Project Manager
 \item Electronic instrumentation and data processing
+\item Optical deisng and modelling
 \end{itemize}
 
 \divider
@@ -119,7 +128,7 @@
 \begin{itemize}
 \item Installation and commissioning of microwave reflectometry diagnostics for Nuclear Fusion research
 \item Development of density profile reconstruction codes for distributed computing cluster
-\item Working in a nuclear fusion research facility including in-vessel access
+% \item Working in a nuclear fusion research facility including in-vessel access
 \end{itemize}
 
 \divider
@@ -132,9 +141,9 @@
 \divider
 
 \cvevent{LabVIEW Developer}{Department of Physics, Instituto Superior Técnico}{February 2012 - July 2012}{Oeiras, Portugal}
-\begin{itemize}
-\item Development of LabVIEW interfaces for physics laboratories
-\end{itemize}
+%\begin{itemize}
+%\item Development of LabVIEW interfaces for physics laboratories
+%\end{itemize}
 
 \divider
 
@@ -217,17 +226,22 @@
 
 % \addbibresource{publications.bib}
 
-% \bibliographystyle{plain}
-% \printbibliography
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book,sorting=ydnt]
+%\bibliographystyle{plain}
+%\bibliographystyle{ieeetr}
+
+%\printbibliography
 
 
-\divider
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book,sorting=ydnt]
+
+
+%\divider
 
 % \begingroup
-% \newrefcontext[sorting=ydnt]  
+ \newrefcontext[sorting=ynt]  
 
-\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article,sorting=ydnt]
+%\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article,sorting=ydnt]
+\printbibliography[sorting=ynt,heading=pubtype,omitnumbers=true,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
 
 % \endgroup 
 \divider
